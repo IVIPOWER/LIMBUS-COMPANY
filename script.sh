@@ -1,6 +1,7 @@
 #/bin/bash
 read -p "Introduce el numero de veces que quieres que te limbusee la compañia: " numeroMagico
-for i in $(seq 1 $numeroMagico);
+for i in $(seq 1 $((RANDOM % $numeroMagico + 1))
+);
 do
   echo "LIMBUS COMPANYYYYY!!!!!!!!!!!!"
   IMAGEN="/home/alumnom/Imágenes/donquixote.jpeg"
